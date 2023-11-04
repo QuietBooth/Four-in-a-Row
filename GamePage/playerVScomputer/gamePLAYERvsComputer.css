@@ -2,14 +2,14 @@
 
 @font-face {
     font-family: 'Avengers'; 
-    src: url("../FontFile/AvengeanceHeroicAvengerBoldItalic-R73A.ttf") format('truetype'); 
+    src: url("../AvengeanceHeroicAvengerBoldItalic-R73A.ttf") format('truetype'); 
 } 
 
 
 /* Start Button Font Link */
 @font-face {
     font-family: 'start';
-    src: url("../FontFile/Audiowide-Regular.ttf");
+    src: url("../Audiowide-Regular.ttf");
 }
 
 *{
