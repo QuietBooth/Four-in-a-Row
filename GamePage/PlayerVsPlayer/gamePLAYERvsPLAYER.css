@@ -18,11 +18,14 @@
     box-sizing: border-box;
 }
 
-body {
+body{
     background-image: url(../Pics/GamePageBackground.jpeg);
     background-size: 100% 100vh;
     background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
 }
+
 .Game-container{
     width: 100%;
     height: 100vh;
@@ -33,9 +36,9 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
 }
+
 
 .Game-Part{
     width: 100%;
@@ -43,6 +46,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    justify-content: space-around;
 }
 
 
@@ -51,6 +55,7 @@ body {
     font-family: 'Avengers', sans-serif;
     font-size: 60px;
     text-indent: 30px;
+    padding-top: 20px;
     background: linear-gradient(90deg, #b90000, #e71d6e, #5076f1);    
     -webkit-background-clip: text;
     background-clip: text;
@@ -116,26 +121,70 @@ body {
     cursor: pointer;
 }
 
-
-
-
-#board {
-    height: 540px;
-    width: 580px;
-    background-color: blue;
-    border: 10px solid navy;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+h2{
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.tile {
-    height: 70px;
-    width: 70px;
+.board{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    border: 2px solid black;
+    width: 630px;
+    background-color: rgb(74, 74, 198);
+}
+
+ul{
+    display: grid;
+    place-items: center; 
+}
+
+ul p{
     margin: 5px;
-
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    border-radius: 100px;
     background-color: white;
-    border-radius: 50%;
-    border: 5px solid navy;
 }
 
+ul:hover{
+    cursor: pointer;
+    background-color: rgb(98, 136, 238);
+}
+
+
+@media(max-width:700px){
+    .board{
+        width: 500px;
+    }
+    ul p{
+        width: 55px;
+        height: 55px;
+        
+    }
+    
+}
+
+@media(max-width:520px){
+    .board{
+        width: 400px;
+    }
+    ul p{
+        width: 40px;
+        height: 40px;
+        
+    }
+    
+}
+@media(max-width:420px){
+    .board{
+        width: 320px;
+    }
+    ul p{
+        width: 30px;
+        height: 30px;
+        
+    }
+    
+}

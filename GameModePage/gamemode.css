@@ -94,6 +94,13 @@ body {
     cursor: pointer;
 }   
 
+.highlighted{
+    text-align: center;
+    width: 750px;
+    background: linear-gradient(to right, #ec3c3c, #5076f1);
+    border-radius: 10px;
+}
+
 .Mode-box-text p:hover{
     transition: 0.5s ease-in;   
     transform: scale(1.1);
