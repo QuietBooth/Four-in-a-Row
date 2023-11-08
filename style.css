@@ -23,7 +23,10 @@ body{
 }
 
 
-
+.Home-Page{
+    width: 100%;
+    height: 100%;
+}
 
 
 
@@ -86,16 +89,17 @@ body{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 750px){
 
-    html{
+    /* html{
         width: 100vw;
         height: 100vh;
-    }
+    } */
 
     body{
-        height: 100%;
-        width: 100%;
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden;
         background-image: url("https://wepik.com/api/image/ai/9a859a92-42ef-4e5e-8a36-2708199a2619");
         background-repeat: no-repeat;
         background-size: 100vw 100vh;
@@ -104,9 +108,10 @@ body{
     
     .Container{
         width: 100%;
-        height: 100%;
+        height: 80%;
         overflow: hidden;
     }
+
     
 
     
@@ -116,7 +121,7 @@ body{
 
     #Home-title p{
         font-family: 'CustomFontName', sans-serif;
-        font-size: 30px;
+        font-size: 20px;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black; 
         background: linear-gradient(90deg, #b90000, #e71d6e, #5076f1);  
@@ -127,12 +132,12 @@ body{
     }
 
     .Home-game-Pic img{
-        width: 300px;
-        height: 250px;
+        width: 100px;
+        height: 150px;
     }
     
     .Play-button img{
-        width: 150px;
+        width: 50px;
         padding-right: 40px;
     }
 

@@ -43,10 +43,8 @@ body{
 .Game-Part{
     width: 100%;
     height: 80%;
-    display: flex;
-    align-items: center;
+    display: flex;  
     justify-content: center;
-    justify-content: space-around;
 }
 
 .Game-title{
@@ -137,12 +135,16 @@ body{
 
 .iron-gif {
     height: 100%;
-    padding-left: 100px;
+    padding-left: 0px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     /* justify-content: center; */
+}
+
+.iron-gif{
+    padding-right: 150px;
 }
 
 .Thanos-gif {
@@ -272,37 +274,275 @@ ul:hover{
 }
 
 
-@media(max-width:700px){
-    .board{
-        width: 500px;
-    }
-    ul p{
-        width: 55px;
-        height: 55px;
-        
-    }
-    
-}
+@media only screen and (max-width:750px){
 
-@media(max-width:520px){
-    .board{
-        width: 400px;
+    html{
+        width: 750px;
+        height: 425px;
     }
-    ul p{
-        width: 40px;
-        height: 40px;
-        
+
+    body{
+        height: 100%;
+        width: 100%;
+        background-size: 100%;
     }
     
-}
-@media(max-width:420px){
-    .board{
-        width: 320px;
+    .Game-container{
+        width: 100%;
+        height: 100%;
     }
+    
+    .Layout{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .Game-Part{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-around;
+    }
+    
+    .Game-title{
+        width: 100%;
+        height: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: start;
+        padding-left: 300px;
+    }
+    
+
+
+    .Game-title svg{
+        display: none;
+    }
+    
+    .Game-title h1{
+        text-align: center;
+        font-family: 'Avengers', sans-serif;
+        font-size: 30px;
+        text-indent: 30px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        background: linear-gradient(90deg, #b90000, #e71d6e, #5076f1);    
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; 
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;   
+    }
+    
+    /* #title-time{
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+    } */
+    
+    /* .flex-centered {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    } */
+
+    .iron-gif{
+        padding-right: 0px;
+    }
+    
+    #timer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'start';
+        width: 30%;
+        height: 15%;
+        color: whitesmoke;
+        border-radius: 10px;
+        text-align: center;
+        background: linear-gradient(90deg, #b90000, #e71d6e, #5076f1);    
+        top: 5vh;
+        right: 5vh;
+        font-size: 20px;
+        border: 4px solid black;
+        border-radius: 3px;
+    }
+    
+    #timer1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'start';
+        width: 25%;
+        height: 15%;
+        color: whitesmoke;
+        border-radius: 10px;
+        text-align: center;
+        background: linear-gradient(90deg, #b90000, #e71d6e, #5076f1);    
+        top: 5vh;
+        right: 5vh;
+        font-size: 20px;
+        border: 4px solid black;
+        border-radius: 3px;
+    }
+    
+    
+    .Game-title h2{
+        text-align: center;
+        font-family: 'Avengers', sans-serif;
+        font-size: 40px;
+        text-indent: 30px;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        background: linear-gradient(90deg, #b90000, #e71d6e, #5076f1);    
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; 
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;   
+    }
+    
+    .iron-gif {
+        height: 100%;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        /* justify-content: center; */
+    }
+
+    .iron-gif img{
+        height: 120px;
+    }
+    
+    .Thanos-gif {
+        height: 100%;
+        width: 100%;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        /* justify-content: center; */
+    }
+    
+    .iron-gif p{
+        text-align: center;
+        font-family: 'Avengers', sans-serif;
+        font-size: 25px;
+        background: linear-gradient( to right , rgb(55, 253, 0), rgb(5, 45, 156));  
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; 
+    
+    }
+    
+    .Thanos-gif {
+        padding-right: 0px;
+    }
+
+    .Thanos-gif img{
+        height: 120px;
+    }
+    
+    
+    
+    .Thanos-gif p{
+        text-align: center;
+        font-family: 'Avengers', sans-serif;
+        font-size: 25px;
+        background: linear-gradient( to right , rgb(211 0 253), rgb(5, 45, 156));  
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent; 
+    }
+    
+    .Start-button{
+        width: 100%;
+        height: 20%;
+        display: block;
+        padding-left: 260px;
+        padding-top: 20px;
+    }
+    
+    
+    .Start-button button{
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        font-family: 'start',sans-serif;
+        font-size: 10px;
+        color: white;   
+        background-color: rgba(21, 89, 168, 1);
+    }
+    
+    .Start-button button:hover{
+        transition: 0.5s ease-in;   
+        transform: scale(1.1);
+        cursor: pointer;
+        background: linear-gradient(90deg, #b90000, #e7381d, #5076f1);    
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;     
+    }
+
+    
+    h2{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    #iron-text{
+        background: linear-gradient(90deg, #b90000, #f16000); 
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;          
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;  
+    }
+    
+    #thanos-text{
+        background: linear-gradient(90deg, gold, rgb(93, 80, 5)); 
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: black;          
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;  
+    }
+    
+    .board{
+        display: grid;
+        grid-template-columns: repeat(7,1fr);
+        border: 2px solid black;
+        width: 400px;
+        height: 270px;
+        padding-top: 10px;
+        border-radius: 25px;
+        background: radial-gradient( circle, rgb(242, 90, 30),rgb(114, 69, 237));
+    }
+    
+    ul{
+        display: grid;
+        place-items: center; 
+        width: 50px;
+        height: 100px;
+    }
+    
     ul p{
+        margin: 5px;
         width: 30px;
         height: 30px;
-        
+        border: 2px solid black;
+        border-radius: 100px;
+        background-color: white;
     }
-    
 }

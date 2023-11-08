@@ -192,7 +192,12 @@ body{
 }
 
 
-@media only screen and (max-width:900px){
+@media only screen and (max-width:750px){
+
+    html{
+        height: 425px;
+        width: 750px;
+    }
 
     body{
         width: 100vw;
@@ -202,10 +207,10 @@ body{
 
 
     .Instruction-Container{
-        width: 900px;;
+        width: 750px;;
         height: 425px;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
@@ -225,7 +230,7 @@ body{
     
     #Instructions{
         height: 425px;
-        width: 900px;
+        width: 750px;
     }
     
     #Instructions-text{
@@ -235,7 +240,7 @@ body{
     }
     
     #Instructions-text{
-        width: 100%;
+        width: 80%;
         height: 20%;
         display: flex;
         align-items: center;
@@ -266,7 +271,7 @@ body{
     
     #Instructions-text p{
         font-family: 'Avengers', sans-serif;
-        font-size: 30px;
+        font-size: 10px;
         text-indent: 10px;
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: black; 
@@ -297,7 +302,7 @@ body{
     
     .Instruction-Content h2{
         font-family: 'Avengers', sans-serif;
-        font-size:22px;
+        font-size:2px;
         /* text-indent: 20px; */
         padding-top: 25px;  
         background: linear-gradient( to right , #ec3c3c, #5076f1);  

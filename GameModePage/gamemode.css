@@ -128,25 +128,111 @@ body {
     color: transparent;
 }
 
-@media only screen and (max-width:425px){
+@media only screen and (max-height:430px) and (max-width:900px){
 
-    html{
-        height: 100vh;
-        width: 100vw;
-        /* overflow: hidden; */
-    }
-
-    body{
-        width:100vw;
-        height: 100vh;
-        background-size: 100%;
-    }
     .Game-mode-container {
         height: 100vh;
         width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
     }
-
+    
+    #home-button{
+        cursor: pointer;
+    }
+    
+    #sound-button{
+        cursor: pointer; 
+    }
+    
     .Game-mode-head{
-        flex-wrap: nowrap;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .Game-mode-head h2 {
+        text-align: center;
+        width: 50%;
+        font-family: 'Avengers', sans-serif;
+        font-size: 85px;
+        text-indent: 20px;
+        /* padding-top: 50px;
+        padding-bottom: 50px; */
+        -webkit-text-stroke-width: 5px;
+        -webkit-text-stroke-color: black;
+        background: linear-gradient(to right, #ec3c3c, #5076f1);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .Mode-box {
+        width: 60%;
+        height: 50%;
+        border-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.505);
+    
+    }
+    
+    .Mode-box-text{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .Mode-box-text p {
+        font-family: 'start', sans-serif;
+        font-size: 55px;
+        color: white;
+        -webkit-text-stroke-width:2px;
+        -webkit-text-stroke-color: black;
+    }
+    
+    .Start-button{
+        width: 140px;
+        height: 60px;
+    }
+    
+    
+    .Start-button button{
+        width: 140px;
+        height: 60px;
+        border-radius: 15px;
+        border: none;
+        font-family: 'start',sans-serif;
+        font-size: 25px;
+        color: white;   
+        background-color: rgba(21, 89, 168, 1);
+    }
+    
+    .Start-button button:hover{
+        transition: 0.5s ease-in;   
+        transform: scale(1.1);
+        cursor: pointer;
+    }   
+    
+    .highlighted{
+        text-align: center;
+        width: 750px;
+        background: linear-gradient(to right, #ec3c3c, #5076f1);
+        border-radius: 10px;
+    }
+    
+    .Mode-box-text p:hover{
+        transition: 0.5s ease-in;   
+        transform: scale(1.1);
+        cursor: pointer;
+        background: linear-gradient(to right, #ec3c3c, #5076f1);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
     }
 }

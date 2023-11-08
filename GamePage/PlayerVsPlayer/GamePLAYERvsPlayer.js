@@ -87,6 +87,7 @@ function player2over() {
     }
 }
 
+
 // document.addEventListener("click", resetTimer);
 
 
