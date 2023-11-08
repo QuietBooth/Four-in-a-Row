@@ -14,22 +14,6 @@ Text2 = document.getElementById("thanos-text").innerText =ThanosText;
 
 
 
-const bgAudio = document.getElementById('bgAudio');
-
-// Function to toggle audio play/pause
-function toggleAudio() {
-    if (bgAudio.paused) {
-    bgAudio.play();
-    } else {
-        bgAudio.pause();
-    }
-}
-
-// Function to change the volume
-function changeVolume(volume) {
-    bgAudio.volume = volume;
-}
-
 columns = document.getElementById("column")
 
 
@@ -46,56 +30,48 @@ val_c6 = 1
 val_c7 = 1
 turn = 1
 
-var timer1 = document.getElementById("timer")
-var timer2 = document.getElementById("timer1")
+// var timer1 = document.getElementById("timer")
+// var timer2 = document.getElementById("timer1")
 
 
 
-var countDownTurn = 1
+// var countDownTurn = 1
 
 
-let time1 = 5;
+// let time1 = 5;
 
-if(countDownTurn === 1){
-    player1over()
-}
+// if(countDownTurn === 1){
+//     player1over()
+// }
 
-function player1over() {
-    timer1.textContent = time1;
-    if (time1 === 0) {
-        player2over()
-        time1 = 5;
-    countDownTurn = 2
-    } else {
-    time1--;
-    setTimeout( player1over, 1000); // Update the countdown every 1 second (1000 milliseconds)
-    }
-}
+// function player1over() {
+//     timer1.textContent = time1;
+//     if (time1 === 0) {
+//         player2over()
+//         time1 = 5;
+//     countDownTurn = 2
+//     } else {
+//     time1--;
+//     setTimeout( player1over, 1000); // Update the countdown every 1 second (1000 milliseconds)
+//     }
+// }
 
-let time2 = 5;
-
-
-function player2over() {
-    timer2.textContent = time2;
-    if (time2 === 0) {
-    countDownTurn = 1
-    player1over()
-    time2=5;
-    } else {
-    time2--;
-    setTimeout(player2over, 1000); // Update the countdown every 1 second (1000 milliseconds)
-    }
-}
+// let time2 = 5;
 
 
-// document.addEventListener("click", resetTimer);
+// function player2over() {
+//     timer2.textContent = time2;
+//     if (time2 === 0) {
+//     countDownTurn = 1
+//     player1over()
+//     time2=5;
+//     } else {
+//     time2--;
+//     setTimeout(player2over, 1000); // Update the countdown every 1 second (1000 milliseconds)
+//     }
+// }
 
 
-
-
-// Start the countdown
-    // player1over();
-    // player2over();
 
 
 
@@ -107,6 +83,7 @@ function check(player) {
         const IronImageURL = 'url("Group-1.svg")';
         const ThanosImageURL = 'url("Thanos.svg")';
 
+// Checking win logic  
 
         for (i = 1; i <= 7; i++) {
             for (j = 1; j <= 3; j++) {
@@ -224,18 +201,7 @@ function check(player) {
 
 
 
-const BgAudio = document.getElementById('bgAudio');
 
-// Function to toggle audio play/pause
-function toggleAudio() {
-    if (BgAudio.paused) {
-    BgAudio.play();
-    } else {
-        BgAudio.pause();
-    }
-}
-
-//playing''
 
 player1name = localStorage.getItem("player1")
 player2name = localStorage.getItem("player2")

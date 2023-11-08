@@ -1,9 +1,11 @@
 let play_button = document.getElementById('Instruction-start');
 
-// open game mode page2
+// open game mode page
 play_button.addEventListener("click",() =>{
     window.open("../GameModePage/gamemode.html","_self")
 })
+
+// redirect to home
 
 HomeButton = document.getElementById("home-button")
 
@@ -12,20 +14,8 @@ HomeButton.onclick = () =>{
 }
 
 
-const bgAudio = document.getElementById('bgAudio');
 
-  // Function to toggle audio play/pause
-function toggleAudio() {
-    if (bgAudio.paused) {
-        bgAudio.play();
-    } else {
-        bgAudio.pause();
-    }
-}
-
-var muteB = document.getElementById("soundButton").addEventListener("click",()=>{
-    bgAudio.toggleAudio();
-})
+// Creating a volume slider to adjust volume
 
 
 const volumeSlider = document.getElementById('volumeSlider');
@@ -35,6 +25,7 @@ const soundButton = document.getElementById("soundButton")
 let isPlaying = false;
 
 // Show the volume slider when hovering over the sound button
+
 soundButton.addEventListener('mouseenter', () => {
     volumeSlider.style.display = 'block';
 });

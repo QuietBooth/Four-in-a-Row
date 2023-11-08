@@ -1,11 +1,5 @@
 
 
-HomeButton = document.getElementById("home-button")
-
-HomeButton.onclick = () =>{
-    location.href = "index.html"
-}
-
 const audioPlayer = document.getElementById('audioPlayer');
 
 audioPlayer.autoplay = true;
@@ -16,6 +10,7 @@ audioPlayer.autoplay = true;
 
 play_button = document.getElementById('Home-start');
 
+// Go to instruction page
 play_button.onclick = () =>{
     location.href = "InstructionPage/Instruction.html"
 }

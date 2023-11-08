@@ -14,7 +14,7 @@ enterToProceed1.style.display = "none";
 enterToProceed2.style.display = "none";
 
 
-
+// Function to validate and display 'EnterToProceed' button
 input1.addEventListener("input", () => {
     if (input1.value.trim() !== "") {
         enterToProceed1.style.display = "block";
@@ -23,6 +23,7 @@ input1.addEventListener("input", () => {
     }
 });
 
+// if only player enters the name we can proceed further
 
 input1.addEventListener("keyup", (event) => {
     if (event.key === "Enter") {
@@ -32,6 +33,8 @@ input1.addEventListener("keyup", (event) => {
 });
 
 
+
+// if only player enters the name we can proceed further
 input2.addEventListener("input", () => {
     if (input2.value.trim() !== "") {
         enterToProceed2.style.display = "block";
@@ -40,6 +43,8 @@ input2.addEventListener("input", () => {
     }
 });
 
+//Enter key to move to game page
+
 input2.addEventListener("keyup", (event) => {
     if (event.key === "Enter") {
         localStorage.setItem("player1",input1.value)
@@ -47,21 +52,4 @@ input2.addEventListener("keyup", (event) => {
         window.location.href = "../GamePage/PlayerVsPlayer/gamePLAYERvsPLAYER.html";
     }
 });
-
-const bgAudio = document.getElementById('bgAudio');
-
-// Function to toggle audio play/pause
-function toggleAudio() {
-    if (bgAudio.paused) {
-    bgAudio.play();
-    } else {
-        bgAudio.pause();
-    }
-}
-
-// Function to change the volume
-function changeVolume(volume) {
-    bgAudio.volume = volume;
-}
-
 

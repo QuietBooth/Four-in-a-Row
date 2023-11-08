@@ -1,4 +1,4 @@
-/* Page-Title Font Link */
+/* // Importing Avengers themed font manually */
 
 @font-face {
     font-family: 'Avengers'; 
@@ -6,7 +6,8 @@
 } 
 
 
-/* Start Button Font Link */
+/* // Importing AuudioWide font for other contents */
+
 @font-face {
     font-family: 'start';
     src: url("../FontFile/Audiowide-Regular.ttf");
