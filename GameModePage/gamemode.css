@@ -32,7 +32,24 @@ body {
     justify-content: space-around;
 }
 
+#home-button{
+    cursor: pointer;
+}
+
+#sound-button{
+    cursor: pointer; 
+}
+
+.Game-mode-head{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 .Game-mode-head h2 {
+    text-align: center;
+    width: 50%;
     font-family: 'Avengers', sans-serif;
     font-size: 85px;
     text-indent: 20px;
@@ -109,4 +126,27 @@ body {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+}
+
+@media only screen and (max-width:425px){
+
+    html{
+        height: 100vh;
+        width: 100vw;
+        /* overflow: hidden; */
+    }
+
+    body{
+        width:100vw;
+        height: 100vh;
+        background-size: 100%;
+    }
+    .Game-mode-container {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .Game-mode-head{
+        flex-wrap: nowrap;
+    }
 }

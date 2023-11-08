@@ -19,7 +19,7 @@
 }
 
 body{
-    background-image: url(./GamePageBackground.jpeg);
+    background-image: url(./Game-Bg.png);
     background-size: 100% 100vh;
     background-repeat: no-repeat;
     display: grid;

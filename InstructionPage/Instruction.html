@@ -5,11 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Instructions</title>
     <link rel="stylesheet" href="Instruction.css">
+    <audio id="bgAudio" loop autoplay>
+        <source src="../THE AVENGERS Epic Medley Orchestral Cover (mp3cut.net).mp3" type="audio/mp3">
+    </audio>
 </head>
-<body>
+<body> 
     <div class="Instruction-Container">
         <div id="Instructions-text" >
+            <svg id="home-button" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-house-heart-fill" viewBox="0 0 16 16">
+                <path d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.707L8 2.207 1.354 8.853a.5.5 0 1 1-.708-.707L7.293 1.5Z"/>
+                <path d="m14 9.293-6-6-6 6V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9.293Zm-6-.811c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.691 0-5.018Z"/>
+            </svg>
             <p>Instructions</p>
+            <div class="sound-button" id="soundButton">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="white" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+                    <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+                    <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+                    <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+                </svg>
+                <div id="volumeSlider" class="volume-slider">
+                    <input type="range" id="volumeRange" min="0" max="1" step="0.01" value="1">
+                </div>
+            </div>
         </div>
         <div class="Instruction-Box">
             <div class="Instruction-Content">
@@ -20,11 +37,13 @@
                 <h2>IronMan vs Computer Mode</h2>
                 <p>In this Mode , Player will be competing against Computer . Player will be IronMan and the Computer will be Thanos .</p>
                 <br>
-                <h3>note :</h3><p>Every Move should beCompleted within the given time , if not the Turn will be Given to the Opponent .</p>
+                <h3 >note :</h3 c ><p>The Firs person to connect 4 character beads in a Row Wins the Game</p>
                 <br>
             </div>
             <div id="Captain-pic" >
-                <img src="../Pics/Captain_Aniuimated.png" alt="">
+                <div id="captain" >
+                    <img src="../Pics/Captain_Aniuimated.png" alt="">
+                </div >
                 <div class="Start-button">
                     <Button id="Instruction-start" >Start</Button>
                 </div>

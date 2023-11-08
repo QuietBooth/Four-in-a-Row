@@ -20,8 +20,8 @@
 }
 
 body{
-    background-image: url(./GamePageBackground.jpeg);
-    background-size: 100% 100vh;
+    background-image: url(./Game-Bg.png);
+    background-size: 100vw 100vh;
     background-repeat: no-repeat;
     display: grid;
     place-items: center;
@@ -40,7 +40,6 @@ body{
     align-items: center;
 }
 
-
 .Game-Part{
     width: 100%;
     height: 80%;
@@ -50,6 +49,12 @@ body{
     justify-content: space-around;
 }
 
+.Game-title{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 
 .Game-title h1{
     text-align: center;
@@ -57,6 +62,7 @@ body{
     font-size: 60px;
     text-indent: 30px;
     padding-top: 20px;
+    padding-bottom: 10px;
     background: linear-gradient(90deg, #b90000, #e71d6e, #5076f1);    
     -webkit-background-clip: text;
     background-clip: text;
@@ -65,9 +71,88 @@ body{
     -webkit-text-stroke-color: black;   
 }
 
+/* #title-time{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+} */
+
+/* .flex-centered {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+} */
+
+#timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'start';
+    width: 70%;
+    height: 20%;
+    color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(90deg, #b90000, #e71d6e, #5076f1);    
+    top: 5vh;
+    right: 5vh;
+    font-size: 50px;
+    border: 4px solid black;
+    border-radius: 3px;
+}
+
+#timer1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'start';
+    width: 70%;
+    height: 20%;
+    color: whitesmoke;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(90deg, #b90000, #e71d6e, #5076f1);    
+    top: 5vh;
+    right: 5vh;
+    font-size: 50px;
+    border: 4px solid black;
+    border-radius: 3px;
+}
+
+
+.Game-title h2{
+    text-align: center;
+    font-family: 'Avengers', sans-serif;
+    font-size: 40px;
+    text-indent: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background: linear-gradient(90deg, #b90000, #e71d6e, #5076f1);    
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;   
+}
 
 .iron-gif {
+    height: 100%;
     padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.Thanos-gif {
+    height: 100%;
+    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    /* justify-content: center; */
 }
 
 .iron-gif p{
@@ -111,7 +196,7 @@ body{
     border-radius: 15px;
     border: none;
     font-family: 'start',sans-serif;
-    font-size: 25px;
+    font-size: 20px;
     color: white;   
     background-color: rgba(21, 89, 168, 1);
 }
@@ -120,6 +205,10 @@ body{
     transition: 0.5s ease-in;   
     transform: scale(1.1);
     cursor: pointer;
+    background: linear-gradient(90deg, #b90000, #e7381d, #5076f1);    
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;     
 }
 
 h2{
@@ -127,12 +216,32 @@ h2{
     margin-bottom: 20px;
 }
 
+#iron-text{
+    background: linear-gradient(90deg, #b90000, #f16000); 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;          
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;  
+}
+
+#thanos-text{
+    background: linear-gradient(90deg, gold, rgb(93, 80, 5)); 
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;          
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;  
+}
+
 .board{
     display: grid;
     grid-template-columns: repeat(7,1fr);
     border: 2px solid black;
-    width: 630px;
-    background-color: rgb(74, 74, 198);
+    width: 650px;
+    height: 550px;
+    border-radius: 25px;
+    background: radial-gradient( circle, rgb(242, 90, 30),rgb(114, 69, 237));
 }
 
 ul{
@@ -142,8 +251,8 @@ ul{
 
 ul p{
     margin: 5px;
-    width: 75px;
-    height: 75px;
+    width: 65px;
+    height: 65px;
     border: 2px solid black;
     border-radius: 100px;
     background-color: white;
@@ -152,6 +261,14 @@ ul p{
 ul:hover{
     cursor: pointer;
     background-color: rgb(98, 136, 238);
+}
+
+#home-button{
+    cursor: pointer;
+}
+
+#sound-button{
+    cursor: pointer; 
 }
 
 
