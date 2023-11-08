@@ -259,7 +259,7 @@ ul p{
     border-radius: 100px;
     background-color: white;
 }
-
+media
 ul:hover{
     cursor: pointer;
     background-color: rgb(98, 136, 238);
@@ -450,7 +450,7 @@ ul:hover{
     }
 
     .Thanos-gif img{
-        height: 120px;
+        width: 150px;
     }
     
     
