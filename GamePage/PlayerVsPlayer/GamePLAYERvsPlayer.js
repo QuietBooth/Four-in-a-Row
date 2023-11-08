@@ -119,14 +119,14 @@ function check(player) {
                         cell3.style.backgroundImage == IronImageURL &&
                         cell4.style.backgroundImage == IronImageURL
                     ){
-                        window.open("/Result Pages/PlayerVsPlayer/IronManWin.html","_self") 
+                        window.open("../Result Pages/PlayerVsPlayer/IronManWin.html","_self") 
                     }else if(
                         cell1.style.backgroundImage == ThanosImageURL &&
                         cell2.style.backgroundImage == ThanosImageURL &&
                         cell3.style.backgroundImage == ThanosImageURL &&
                         cell4.style.backgroundImage == ThanosImageURL
                     ){
-                        window.open("/Result Pages/PlayerVsPlayer/ThanosWin.html","_self") 
+                        window.open("../Result Pages/PlayerVsPlayer/ThanosWin.html","_self") 
                     }else{
                         console.log("hii")
                     }
@@ -211,6 +211,7 @@ function check(player) {
                             cell4.style.backgroundImage == ThanosImageURL
                         ){
                         window.open("/Result Pages/PlayerVsPlayer/ThanosWin.html","_self") 
+                        
                         }else{
                             console.log("hii")
                         }
