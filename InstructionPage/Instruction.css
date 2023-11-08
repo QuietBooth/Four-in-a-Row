@@ -194,6 +194,12 @@ body{
 
 @media only screen and (max-width:900px){
 
+    body{
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+    }
+
 
     .Instruction-Container{
         width: 900px;;
