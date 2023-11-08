@@ -252,7 +252,8 @@ ul p{
 
 ul:hover{
     cursor: pointer;
-    background-color: rgb(171, 121, 29);
+    border-radius: 20px;
+    background: linear-gradient(90deg, #b90000, rgb(114, 69, 237)); 
 }
 
 #home-button{
